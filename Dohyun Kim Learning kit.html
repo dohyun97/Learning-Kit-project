@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Webpage HTML document
+  Author: Dohyun Kim
+  For: EECS 1012, York University, Lassonde School of Engineering -->
+<html lang="En">
+<head>
+  <meta charset="UTF-8">
+<title>Dohyun Kim Learning Kit </title>
+  <!-- in Ex1, add a link tag here to connect it to the css file -->
+<link href="Learning kit.css" rel="stylesheet"/>
+  <script src="Learning kit.js"></script>
+  
+</head>
+<body>
+
+  <header>
+    <h1> My Computational Thinking Kit </h1>
+	<nav>
+	  <!-- In Ex2, add an attribute onclick to button-->
+  	  <button onclick="p01Func()">Problem01</button>
+	  <!-- In Ex4, add an attribute onclick to button-->  
+	  <button onclick="p02Func()">Problem02</button>
+	  <button onclick="p03Func()">Problem03</button>
+	  <button onclick="p04Func()">Problem04</button>
+	  <button onclick="p05Func()">Problem05</button>
+	  <button onclick="p06Func()">Problem06</button>
+	  <button onclick="p07Func()">Problem07</button>
+	  <button onclick="p08Func()">Problem08</button>
+	  
+	</nav>
+  </header>
+  
+  <div id="problem" class="problem">
+  </div>
+  <div class="column1 design">
+    <!-- in Ex3, add an attribute onclick to the following input-->
+	<input id="check1" type="checkbox" onclick="checkUncheck1()"/> Design
+
+    <!-- in Ex5, add attributes onclick and ondblclick to the following img-->
+ 	<img id="flowchart" src=""/>
+  </div>
+  <div class="column2 jsSolution">
+	<input id="check2" type="checkbox" onclick="checkUncheck2()"/> JavaScript Solution
+	 <img id="js" src="" onclick="zoomOut()" ondblclick="zoomIn()" />
+  </div>
+  <div class="column3 programming">
+	<input id="check3" type="checkbox" onclick="checkUncheck3()"/> Programming
+	<div id="program">
+		
+		<div class="input">
+			first number: <input id="num1" type="number" min="-32768" max="32767" />
+		</div>
+		<div class="inputy">
+			second number: <input id="num2" type="number" min="-32768" max="32767" >
+		</div>
+        <div class="inputz" >
+			third number: <input id="num3" type="number" style.display="none"  min="-32768" max="32767" />
+		</div>
+        <div class="input">
+			
+			<button id="button"> enter </button>
+		</div>
+
+		<p id="output"> </p>
+
+		
+		<div id="ex_7">
+			number of positives: <span id="positives_counter">0</span>
+			number of negatives: <span id="negatives_counter">0</span>
+		</div>
+		<div id="ex_8">
+			number of divisible by 6: <span id="divBy6">0</span>
+		</div>
+	</div>
+  </div>
+
+  <footer>(c) Author of this web page: <span>Dohyun Kim</span> </footer>
+</body>
+</html>
